@@ -1,0 +1,96 @@
+/* Base Styles */
+:root {
+  --primary: #6c5ce7;
+  --background: #ffffff;
+  --text: #2d3436;
+  --border: #ddd;
+}
+
+[data-theme="dark"] {
+  --background: #2d3436;
+  --text: #ffffff;
+  --border: #4a4a4a;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: var(--background);
+  color: var(--text);
+  margin: 0;
+  padding: 0;
+  transition: background 0.3s, color 0.3s;
+}
+
+.header {
+  max-width: 600px;
+  margin: 4rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header__title {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.header__title button {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.header__form {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+}
+
+.header__form--input {
+  flex: 1;
+  padding: 0.7rem;
+  border: 2px solid var(--border);
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+
+.header__form--button {
+  padding: 0.8rem 1.5rem;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.header__tasks {
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border: 2px solid var(--border);
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.task__buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.task__buttons button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+}

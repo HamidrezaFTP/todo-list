@@ -89,5 +89,4 @@ themeToggle.addEventListener("click", () => {
   themeToggle.textContent = isDarkMode ? "🌕" : "🌞";
 });
 
-// Load tasks on page load
-document.addEventListener("DOMContentLoaded", loadTasks);
+loadTasks();
